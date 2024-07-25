@@ -161,12 +161,3 @@ footer{
 footer p{
   font-size: clamp(5px,1rem, 2rem);
 }
-
-
-.tes > :nth-child(){
-  color: #96ceff;
-}
-.tes{
-  /* background-color: #0f4c82 ; */
-  color: #f7a400;
-}

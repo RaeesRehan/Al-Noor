@@ -8,6 +8,10 @@ import img3 from './images/red.png'
 import img4 from './images/blue.png'
 import img5 from './images/dark blue.png'
 import img6 from './images/yellow.png'
+import fan from './images/fan.png'
+import factory from './images/factory.webp'
+import focus from './images/focus.jpg'
+import listIcon from './images/list-icon.svg'
 import { FaTruck } from "react-icons/fa";
 import { TbMoneybag } from "react-icons/tb";
 import { FaHeadset } from "react-icons/fa6";
@@ -55,6 +59,10 @@ export { default as img4 } from './images/blue.png';
 export { default as img5 } from './images/dark blue.png';
 export { default as img6 } from './images/yellow.png';
 export { default as logo } from './images/logo.png';
+export {default as fan} from './images/fan.png';
+export {default as factory} from './images/factory.webp';
+export {default as focus} from './images/focus.jpg';
+export {default as listIcon} from './images/list-icon.svg';
 
 // Icons
 export { FaTruck } from "react-icons/fa";

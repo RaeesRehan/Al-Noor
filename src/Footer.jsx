@@ -119,7 +119,7 @@ the highest International Standards.
     <button
       type="submit"
       aria-label="Submit"
-      className="flex h-min  items-center justify-center rounded-xl  bg-yellow px-6 py-1 my-auto raleway text-lg text-black"
+      className="flex h-min items-center justify-center rounded-xl bg-yellow px-4 py-1 my-auto raleway text-lg text-black"
     >
      SUBSCRIBE
     </button>
