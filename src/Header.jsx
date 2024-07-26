@@ -21,6 +21,7 @@ const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Contact', path: '/contact' },
+  { label: 'Products', path: '/products' },
 ];
 
 export default function Header() {
@@ -33,7 +34,7 @@ export default function Header() {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img className="w-20 mx-auto" src={logo} alt="Logo" />
+        <img className="w-20 sm:mx-0 mx-auto" src={logo} alt="Logo" />
       </Typography>
       <List>
         {navItems.map((item) => (
@@ -61,7 +62,7 @@ export default function Header() {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ m: 2, display: { sm: 'none' }, color: '#f7a400' }}
           >
             <MenuIcon />
           </IconButton>
@@ -71,7 +72,7 @@ export default function Header() {
             sx={{
               flexGrow: 1,
               display: 'flex',
-              justifyContent: 'center',
+              justifyContent: 'start',
               alignItems: 'center',
             }}
           >
@@ -98,7 +99,7 @@ export default function Header() {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },

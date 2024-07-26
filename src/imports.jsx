@@ -12,7 +12,7 @@ import fan from './images/fan.png'
 import factory from './images/factory.webp'
 import focus from './images/focus.jpg'
 import listIcon from './images/list-icon.svg'
-import { FaTruck } from "react-icons/fa";
+import { FaTruck, FaHeart, FaEye } from "react-icons/fa";
 import { TbMoneybag } from "react-icons/tb";
 import { FaHeadset } from "react-icons/fa6";
 import { RiLinkedinFill } from "react-icons/ri"
@@ -65,7 +65,7 @@ export {default as focus} from './images/focus.jpg';
 export {default as listIcon} from './images/list-icon.svg';
 
 // Icons
-export { FaTruck } from "react-icons/fa";
+export { FaTruck, FaHeart, FaEye } from "react-icons/fa";
 export { TbMoneybag } from "react-icons/tb";
 export { FaHeadset } from "react-icons/fa";
 export { RiLinkedinFill } from "react-icons/ri";
