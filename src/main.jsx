@@ -7,6 +7,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Layout from './Layout.jsx'
 import About from './About.jsx'
 import Products from './Products.jsx'
+import ProductDetails from './ProductDetails.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,7 +15,7 @@ const router = createBrowserRouter(
       <Route path='' element={<App />} />
       <Route path='about' element={<About />} />
       <Route path='products' element={<Products />} />
-
+      <Route path="/product/:id" element={<ProductDetails />} />
     </Route>
   )
 )

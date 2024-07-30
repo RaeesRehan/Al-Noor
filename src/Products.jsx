@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 import { FaHeart, FaEye,} from './imports';
 
@@ -6,6 +7,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -26,8 +28,13 @@ const Products = () => {
     fetchProducts();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading) return <p className="mt-20 flex justify-center"> <div className="loader"></div> </p>;
+  if (error) return <p className="mt-20 flex justify-center">Error: {error}</p>;
+
+
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`);
+  };
 
   return (
     <div className=" mx-auto p-4 bg-[url('./images/bg.png')]">
@@ -35,8 +42,8 @@ const Products = () => {
       <ul className="flex flex-wrap justify-evenly gap-4 w-full">
         {products.map((product) => (
           
-          <li key={product.id} className="h-auto relative bg-white border p-4 rounded shadow hover:shadow-xl  transition w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col productCard ">
-      
+          <li onClick={() => handleProductClick(product.id)} key={product.id} className="cursor-pointer h-auto relative bg-white border p-4 rounded shadow hover:shadow-xl transition w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col productCard ">
+            
             <img src={product.image} alt={product.title} className="w-full h-48 object-contain mb-4" />
             <h2 className="text-lg font-semibold mb-2 text-nowrap overflow-hidden text-ellipsis">{product.title}</h2>
             <p className="text-gray-700 mb-4 flex-grow truncate-3-lines">{product.description}</p>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import {
   Box,
   CssBaseline,
@@ -55,7 +56,7 @@ export default function Header() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
+      <AppBar component="nav" sx={{ backgroundColor: 'rgba(255, 255, 255, 0.5)', backdropFilter: 'blur(4px)', }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -78,11 +79,12 @@ export default function Header() {
           >
             <img className="w-20" src={logo} alt="Logo" />
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box
+          sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button
                 key={item.label}
-                sx={{ color: '#f7a400' }}
+                sx={{ color: '#f7a400'}}
                 component={NavLink}
                 to={item.path}
                 className={({ isActive }) => (isActive ? 'active' : '')}
