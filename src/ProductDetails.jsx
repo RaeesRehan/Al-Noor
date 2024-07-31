@@ -38,7 +38,7 @@ const ProductDetails = () => {
   return (
     <>
     <div className="mx-auto flex p-4 bg-[url('./images/bg.png')] bg-cover">
-        <img src={product.image} alt={product.title} className="w-full h-48 object-contain mb-4" />
+      <img src={product.image} alt={product.title} className="w-full h-48 object-contain mb-4" />
       <div className="flex flex-col items-center">
       <h3 className="text-3xl font-bold mb-4 text-center text-[#0f4c82] mt-16">{product.title}</h3>
         <span className="">
@@ -46,7 +46,7 @@ const ProductDetails = () => {
 
         {/* <p className="raleway text-lg mb-4 text-start w-full">Rating: {product.rating.rate}</p> */}
         <p className="raleway text-lg mb-4 text-start w-full">Reviews: {product.rating.count}</p>
-        <span className="relative w-[200px] h-4 inline-block overflow-hidden">
+        <span className="relative w-[100px] h-4 inline-block overflow-hidden">
           <img className="absolute z-10 right-0 w-[100px] h-full" src={stars} alt="" />
           <span className="w-[100px] absolute h-full bg-yellow-400 " style={{ right: `${percentage}%` }}>
   
