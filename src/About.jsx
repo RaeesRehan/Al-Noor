@@ -1,6 +1,7 @@
 import React from 'react'
 import {fan, factory, focus, listIcon} from './imports'
 
+
 function About() {
   return (
     <>
@@ -106,9 +107,6 @@ home.
         </div>
 
       </div>
-
-
-
 
     </>
   )

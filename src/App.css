@@ -1,3 +1,4 @@
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
 @font-face {
   font-family: Raleway;
   src: url(/src/assets/fonts/Raleway-Bold/raleway/Raleway-Bold.ttf);
@@ -119,7 +120,7 @@ nav{
   flex-direction: column;
   align-items: center;
   padding: 5%;
-  background-color: #f7a400;
+  /* background-color: #f7a400; */
 } 
 
 .collage{
@@ -158,9 +159,9 @@ nav{
 footer{
   background-color: #0f4c82;
 }
-footer p{
+/* footer p{
   font-size: clamp(5px,1rem, 2rem);
-}
+} */
 .productCard{
   transform: scaleY();
 }
