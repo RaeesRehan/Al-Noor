@@ -31,7 +31,7 @@ function App() {
     >
       <SplideSlide>
         <div className="relative bg-img h-screen flex items-center justify-center lg:justify-start">
-          <span className="hero-caption text-center lg:text-left lg:w-1/2">
+          <span className="hero-caption text-center bg-slate-200 bg-opacity-70 p-6 rounded-lg lg:text-left lg:w-1/2">
             <p className="raleway z-30 text-2xl md:text-3xl lg:text-4xl">The Best</p>
             <h2 className="archive mt-[-5%] mb-0 px-6 text-xl md:text-3xl lg:text-4xl">AIR EXPERIENCE</h2>
             <h5 className="oregano text-xl md:text-2xl lg:text-3xl">You are at the right place to get <hr />
@@ -43,7 +43,7 @@ function App() {
       </SplideSlide>
       <SplideSlide>
         <div className="relative bg-img h-screen flex items-center justify-center lg:justify-start">
-          <span className="hero-caption text-center lg:text-left lg:w-1/2">
+          <span className="hero-caption text-center bg-slate-200 bg-opacity-70 p-6 rounded-lg lg:text-left lg:w-1/2">
             <p className="raleway z-30 text-2xl md:text-3xl lg:text-4xl">The Best</p>
             <h2 className="archive mt-[-5%] mb-0 px-6 text-xl md:text-3xl lg:text-4xl">AIR EXPERIENCE</h2>
             <h5 className="oregano text-xl md:text-2xl lg:text-3xl">You are at the right place to get <hr />
@@ -55,7 +55,7 @@ function App() {
       </SplideSlide>
       <SplideSlide>
         <div className="relative bg-img h-screen flex items-center justify-center lg:justify-start">
-          <span className="hero-caption text-center lg:text-left lg:w-1/2">
+          <span className="hero-caption text-center bg-slate-200 bg-opacity-70 p-6 rounded-lg lg:text-left lg:w-1/2">
             <p className="raleway z-30 text-2xl md:text-3xl lg:text-4xl">The Best</p>
             <h2 className="archive mt-[-5%] mb-0 px-6 text-xl md:text-3xl lg:text-4xl">AIR EXPERIENCE</h2>
             <h5 className="oregano text-xl md:text-2xl lg:text-3xl">You are at the right place to get <hr />

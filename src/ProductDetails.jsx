@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 import Products from './Products';
 import stars from './images/stars.svg'
 
@@ -13,7 +14,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+        const response = await axios(`http://localhost:4000/api/product/getAllProducts`);
         if (!response.ok) {
           throw new Error('Failed to fetch product');
         }
@@ -27,13 +28,14 @@ const ProductDetails = () => {
     };
 
     fetchProduct();
-  }, [id]);
+  }, [i]);
 
   if (loading) return <p className="mt-20 flex justify-center"> <div className="loader"></div> </p>;
   if (error) return <p className="mt-20 flex justify-center">Error: {error}</p>;
   if (!product) return null;
 
   let percentage =  (100 - ( product.rating.rate * 20));
+  
 
   return (
     <>
@@ -44,7 +46,6 @@ const ProductDetails = () => {
         <span className="">
           <span className="flex items-center">
 
-        {/* <p className="raleway text-lg mb-4 text-start w-full">Rating: {product.rating.rate}</p> */}
         <p className="raleway text-lg mb-4 text-start w-full">Reviews: {product.rating.count}</p>
         <span className="relative w-[100px] h-4 inline-block overflow-hidden">
           <img className="absolute z-10 right-0 w-[100px] h-full" src={stars} alt="" />

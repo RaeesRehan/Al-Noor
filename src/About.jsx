@@ -39,9 +39,7 @@ home.
         </h2>
         <p className=" text-[2vw]">
         Consequat mauris nunc congue nisi vitae suscipit.<strong className="yellow">Fringilla est nulla facilisi etiam dignissim diam. </strong>Pulvinar ullamcorper eget
-        elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-        consequat mauris. Elementum eu facilisis sed odio morbi- Euismod
-        lacinia at quis risus sed vulputate odio. Morbi tincidunt ornare massa
+        elementum. massa
         eget egestas purus viverra accumsan in. In hendrerit gravida rutrum
         quisque non tellus orci ac. <strong className="yellow"> Pellentesque nec nam aliquam sem et
         tortor. </strong>

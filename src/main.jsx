@@ -8,12 +8,14 @@ import Layout from './Layout.jsx'
 import About from './About.jsx'
 import Products from './Products.jsx'
 import ProductDetails from './ProductDetails.jsx';
+import Categories from './Categories.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<App />} />
       <Route path='about' element={<About />} />
+      <Route path='categories' element={<Categories />} />
       <Route path='products' element={<Products />} />
       <Route path="/product/:id" element={<ProductDetails />} />
     </Route>

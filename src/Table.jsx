@@ -105,7 +105,7 @@ import TableAccordion from './TableAccordion.jsx';
 <div>
       <TableAccordion />
 </div>
-<p class="text-center font-light mt-4 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl px-4">
+<p class="text-center font-light mt-4 text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl px-4">
     Rated Voltage: 230 ± 10V - AC Cycles: 50 Hz Type: Capacitors for all Fans
     10% Variation in air delivery & Power Consumption. <br />
     Note: All the specifications mentioned above are in accordance with 99-99% pure Copper Winding wire.

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 import { FaHeart, FaEye,} from './imports';
@@ -9,15 +10,13 @@ const Products = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://fakestoreapi.com/products');
-        if (!response.ok) {
-          throw new Error('Failed to fetch products');
-        }
-        const data = await response.json();
-        setProducts(data);
+        const response = await axios.get('http://localhost:4000/api/product/getAllProducts');
+        setProducts(response.data);
+        
       } catch (error) {
         setError(error.message);
       } finally {
@@ -28,11 +27,13 @@ const Products = () => {
     fetchProducts();
   }, []);
 
+
   if (loading) return <p className="mt-20 flex justify-center"> <div className="loader"></div> </p>;
   if (error) return <p className="mt-20 flex justify-center">Error: {error}</p>;
-
+  console.log(products[0].Main_images[0].filename);
 
   const handleProductClick = (id) => {
+    // alert({products.id})
     navigate(`/product/${id}`);
   };
 
@@ -42,10 +43,18 @@ const Products = () => {
       <ul className="flex flex-wrap justify-evenly gap-4 w-full">
         {products.map((product) => (
           
-          <li onClick={() => handleProductClick(product.id)} key={product.id} className="cursor-pointer h-auto relative bg-white border p-4 rounded shadow hover:shadow-xl transition w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col productCard ">
+          <li onClick={() => handleProductClick(product._id)} key={product._id} className="cursor-pointer h-auto relative bg-white border p-4 rounded
+           shadow hover:shadow-xl transition w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col productCard ">
+            {/* <h2>{product.Main_images.map((imagesDetails) => (imagesDetails.originalName))}</h2> */}
+            {/* {product.Main_images.map((image) => ( */}
+            <div key={product._id}>
+            <img src={`http://localhost:4000/uploads/products/${product.Main_images[1].filename}`} alt={product.name} className="w-full h-48 object-contain mb-4" />
+
+              {/* <h1>{image.file_date}</h1> */}
+            </div>
+          {/* ))} */}
             
-            <img src={product.image} alt={product.title} className="w-full h-48 object-contain mb-4" />
-            <h2 className="text-lg font-semibold mb-2 text-nowrap overflow-hidden text-ellipsis">{product.title}</h2>
+            <h2 className="text-lg font-semibold mb-2 text-nowrap overflow-hidden text-ellipsis">{product.name}</h2>
             <p className="text-gray-700 mb-4 flex-grow truncate-3-lines">{product.description}</p>
             <p className="font-bold text-lg mb-4">${product.price}</p>
             

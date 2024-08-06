@@ -90,13 +90,13 @@ function Footer() {
                 placeholder="Email address"
                 autoComplete="email"
                 aria-label="Email address"
-                className="block w-full rounded-2xl border border-custom_yellow bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+                className="block w-full rounded-2xl border border-custom_yellow bg-transparent py-4  pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
               />
               <div className="absolute inset-y-1 right-1 flex justify-end">
                 <button
                   type="submit"
                   aria-label="Submit"
-                  className="flex h-min items-center justify-center rounded-xl bg-yellow px-4 py-1 my-auto raleway text-lg text-black"
+                  className="flex h-min items-center justify-center rounded-xl bg-yellow px-4 py-1 my-auto mx-1 raleway text-base md:text-lg lg:text-xl text-black"
                 >
                   SUBSCRIBE
                 </button>
