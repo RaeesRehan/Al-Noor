@@ -1,7 +1,6 @@
 import '@splidejs/splide/dist/css/splide.min.css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import  BasicTable  from './Table'
-import './App.css'
+import  BasicTable  from './sections/Table'
 import img1 from './images/logo.png'
 import img2 from './images/green.png'
 import img3 from './images/red.png'
@@ -52,7 +51,7 @@ export { Splide } from '@splidejs/react-splide';
 export { SplideSlide } from '@splidejs/react-splide';
 
 // BasicTable.js
-export { default as BasicTable } from './Table';
+export { default as BasicTable } from './sections/Table';
 
 // Images
 export { default as img1 } from './images/logo.png';

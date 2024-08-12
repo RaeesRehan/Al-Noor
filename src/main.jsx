@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './pages/App.jsx'
 import './index.css'
-import Header from './Header.jsx'
+import Header from './components/Header.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import About from './About.jsx'
-import Products from './Products.jsx'
-import ProductDetails from './ProductDetails.jsx';
-import Categories from './Categories.jsx'
+import About from './pages/About.jsx'
+import Products from './pages/Products.jsx'
+import ProductDetails from './pages/ProductDetails.jsx';
+import Categories from './pages/Categories.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

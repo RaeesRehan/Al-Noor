@@ -11,7 +11,7 @@ import {
   Box,
   Typography
 } from '@mui/material';
-import './App.css'
+import '../App.css'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Accordion, AccordionDetails, AccordionSummary, } from '@mui/material';
 import TableAccordion from './TableAccordion.jsx';  

@@ -12,6 +12,7 @@ import {
   FaHeadset ,
 
 } from '../imports'
+import '../App.css'
 import FeaturedProducts from '../sections/FeaturedProducts'
 function App() {
     

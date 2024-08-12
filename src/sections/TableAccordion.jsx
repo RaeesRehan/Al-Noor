@@ -5,8 +5,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
-import './App.css'
-import ceilingFan from './images/ceiling-fan.svg'
+import '../App.css'
+import ceilingFan from '../images/ceiling-fan.svg'
 
 export default function TableAccordion() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import '../App.css';
 import {
   Box,
   CssBaseline,
@@ -16,7 +16,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
-import logo from './images/logo.png';
+import logo from '../images/logo.png';
 
 const navItems = [
   { label: 'Home', path: '/' },
