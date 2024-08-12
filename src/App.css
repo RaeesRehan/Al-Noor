@@ -153,15 +153,11 @@ nav{
   display: flex;
   flex-direction: row;
 }
-.features img{
-  min-width: 20%;
-}
+
 footer{
   background-color: #0f4c82;
 }
-/* footer p{
-  font-size: clamp(5px,1rem, 2rem);
-} */
+
 .productCard{
   transform: scaleY();
 }

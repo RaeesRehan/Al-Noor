@@ -12,19 +12,19 @@ export default function TableAccordion() {
   return (
     <div className="md:hidden">
         
-  <Accordion sx={{backgroundColor:'#f7a400'}} className="bg-[]">
+  <Accordion sx={{backgroundColor:'#f7a400', minWidth: '200px'}} className="bg-[]">
     <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1-content"
         id="panel1-header"
     >
         <img src={ceilingFan} width="50" alt="" />
-        <span className="m-auto">
+        <span className="m-auto min-w-0">
         Ceiling Fans
         </span>
     </AccordionSummary>
-    <AccordionDetails>
-    <table class="rounded-lg ">
+    <AccordionDetails className="overflow-x-scroll max-w-[95vw]">
+    <table class="rounded-lg overflow-x-scroll">
     <thead class="">
       <tr>
         <th class="p-2">Size (mm)</th>
@@ -65,7 +65,7 @@ export default function TableAccordion() {
     </AccordionDetails>
 </Accordion>
         {/* /////////////////////////////// */}
-  <Accordion sx={{backgroundColor:'#f7a400'}} className="bg-[]">
+        <Accordion sx={{backgroundColor:'#f7a400'}} className="bg-[]">
     <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1-content"
@@ -76,8 +76,8 @@ export default function TableAccordion() {
         Pedestal Fans
         </span>
     </AccordionSummary>
-    <AccordionDetails>
-    <table class="rounded-lg ">
+    <AccordionDetails className="overflow-x-scroll max-w-[95vw]">
+    <table class="rounded-lg overflow-x-scroll ">
     <thead class="">
       <tr>
         <th class="p-2">Size (mm)</th>
@@ -122,8 +122,8 @@ export default function TableAccordion() {
         Exhaust Fans (Plastic Body)
         </span>
     </AccordionSummary>
-    <AccordionDetails>
-    <table class="rounded-lg ">
+    <AccordionDetails className="overflow-x-scroll max-w-[95vw]">
+    <table class="rounded-lg overflow-x-scroll ">
     <thead class="">
       <tr>
         <th class="p-2">Size (mm)</th>
@@ -175,8 +175,8 @@ export default function TableAccordion() {
         Exhaust Fans (Metal Body)
         </span>
     </AccordionSummary>
-    <AccordionDetails>
-    <table class="rounded-lg ">
+    <AccordionDetails className="overflow-x-scroll max-w-[95vw]">
+    <table class="rounded-lg overflow-x-scroll ">
     <thead class="">
       <tr>
         <th class="p-2">Size (mm)</th>
@@ -265,11 +265,11 @@ export default function TableAccordion() {
     >
         <img src={ceilingFan} width="50" alt="" />
         <span className="m-auto">
-        Pedestal Fans
+        Wall Bracket
         </span>
     </AccordionSummary>
-    <AccordionDetails>
-    <table class="rounded-lg ">
+    <AccordionDetails className="overflow-x-scroll max-w-[95vw]">
+    <table class="rounded-lg overflow-x-scroll ">
     <thead class="">
       <tr>
         <th class="p-2">Size (mm)</th>

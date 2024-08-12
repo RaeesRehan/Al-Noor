@@ -11,7 +11,7 @@ import {
   FaWhatsapp,
   FaEnvelopeOpenText,
   useState,
-} from './imports';
+} from '../imports';
 
 function Footer() {
   return (

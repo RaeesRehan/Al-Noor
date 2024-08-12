@@ -11,8 +11,8 @@ import {
   TbMoneybag ,
   FaHeadset ,
 
-} from './imports'
-import FeaturedProducts from './FeaturedProducts'
+} from '../imports'
+import FeaturedProducts from '../sections/FeaturedProducts'
 function App() {
     
   return (
@@ -25,12 +25,25 @@ function App() {
         autoplay: true,
         interval: 3000,
         pauseOnHover: false,
+        gap: '1rem',
       }} 
       aria-label="My Favorite Images"
       className="relative"
     >
       <SplideSlide>
-        <div className="relative bg-img h-screen flex items-center justify-center lg:justify-start">
+        <div className="relative overflow-hidden bg-img h-screen flex items-center justify-center lg:justify-start">
+          <span className="hero-caption text-center bg-slate-200 bg-opacity-70 p-6 rounded-lg lg:text-left lg:w-1/2">
+            <p className="raleway z-30 text-2xl md:text-3xl lg:text-4xl">The Best</p>
+            <h2 className="archive mt-[-5%]  mb-0 px-6 text-xl md:text-3xl lg:text-4xl">AIR EXPERIENCE</h2>
+            <h5 className="oregano text-xl md:text-2xl lg:text-3xl">You are at the right place to get <hr />
+              huge range of Quality Products
+            </h5>
+            <button className="raleway px-4 py-2 mt-4 md:px-6 md:py-3">BUY NOW</button>
+          </span>
+        </div>
+      </SplideSlide>
+      <SplideSlide>
+        <div className="relative overflow-hidden bg-img h-screen flex items-center justify-center lg:justify-start">
           <span className="hero-caption text-center bg-slate-200 bg-opacity-70 p-6 rounded-lg lg:text-left lg:w-1/2">
             <p className="raleway z-30 text-2xl md:text-3xl lg:text-4xl">The Best</p>
             <h2 className="archive mt-[-5%] mb-0 px-6 text-xl md:text-3xl lg:text-4xl">AIR EXPERIENCE</h2>
@@ -42,19 +55,7 @@ function App() {
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div className="relative bg-img h-screen flex items-center justify-center lg:justify-start">
-          <span className="hero-caption text-center bg-slate-200 bg-opacity-70 p-6 rounded-lg lg:text-left lg:w-1/2">
-            <p className="raleway z-30 text-2xl md:text-3xl lg:text-4xl">The Best</p>
-            <h2 className="archive mt-[-5%] mb-0 px-6 text-xl md:text-3xl lg:text-4xl">AIR EXPERIENCE</h2>
-            <h5 className="oregano text-xl md:text-2xl lg:text-3xl">You are at the right place to get <hr />
-              huge range of Quality Products
-            </h5>
-            <button className="raleway px-4 py-2 mt-4 md:px-6 md:py-3">BUY NOW</button>
-          </span>
-        </div>
-      </SplideSlide>
-      <SplideSlide>
-        <div className="relative bg-img h-screen flex items-center justify-center lg:justify-start">
+        <div className="relative overflow-hidden bg-img h-screen flex items-center justify-center lg:justify-start">
           <span className="hero-caption text-center bg-slate-200 bg-opacity-70 p-6 rounded-lg lg:text-left lg:w-1/2">
             <p className="raleway z-30 text-2xl md:text-3xl lg:text-4xl">The Best</p>
             <h2 className="archive mt-[-5%] mb-0 px-6 text-xl md:text-3xl lg:text-4xl">AIR EXPERIENCE</h2>
@@ -105,30 +106,31 @@ function App() {
   </span>
     </div>
 
-<div className='features grid grid-cols-1 md:grid-cols-3  gap-8 p-6'>
-      <span className='flex bg-[#0f4c82] p-4 text-white w-3/4 rounded-lg items-center text-center m-auto'>
-        <FaTruck className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10vw] mx-2" />
-        <div className="text-start">
-          <h5 className="raleway text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[2vw]">Fast Delivery</h5>
-          <p className="raleway-lite text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.5vw]">Experience lightning-fast delivery.</p>
-        </div>
-      </span>
-      <span className='flex bg-[#0f4c82] p-4 text-white w-3/4 rounded-lg items-center text-center m-auto'>
-        <TbMoneybag className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10vw] mx-2" />
-        <div className="text-start">
-          <h5 className="raleway text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[2vw]">Cash on Delivery</h5>
-          <p className="raleway-lite text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.5vw]">Pay after getting your product.</p>
-        </div>
-      </span>
-      <span className='flex bg-[#0f4c82] p-4 text-white w-3/4 rounded-lg items-center text-center m-auto'>
-        <FaHeadset className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-[9vw] mx-2" />
-        <div className="text-start">
-          <h5 className="raleway text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[2vw]">Technical Support</h5>
-          <p className="raleway-lite text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.5vw]">We are here to help.</p>
-        </div>
-      </span>
+    <div className="features grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+  <span className="flex bg-[#0f4c82] p-4 text-white w-full min-w-[240px] min-h-[150px] rounded-lg items-center m-auto">
+    <FaTruck className="text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[7rem] mx-2 min-w-[4rem]" />
+    <div className="md:text-start w-full text-center">
+      <h5 className="raleway text-lg md:text-xl lg:text-2xl xl:text-[2rem]">Fast Delivery</h5>
+      <p className="raleway-lite text-sm md:text-base lg:text-lg xl:text-[1.5rem]">Experience lightning-fast delivery.</p>
     </div>
+  </span>
 
+  <span className="flex bg-[#0f4c82] p-4 text-white w-full min-w-[240px] min-h-[150px] rounded-lg items-center m-auto">
+    <TbMoneybag className="text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[7rem] mx-2 min-w-[4rem]" />
+    <div className="md:text-start w-full text-center">
+      <h5 className="raleway text-lg md:text-xl lg:text-2xl xl:text-[2rem]">Cash on Delivery</h5>
+      <p className="raleway-lite text-sm md:text-base lg:text-lg xl:text-[1.5rem]">Pay after getting your product.</p>
+    </div>
+  </span>
+
+  <span className="flex bg-[#0f4c82] p-4 text-white w-full min-w-[240px] min-h-[150px] rounded-lg items-center m-auto">
+    <FaHeadset className="text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[7rem] mx-2 min-w-[4rem]" />
+    <div className="md:text-start w-full text-center">
+      <h5 className="raleway text-lg md:text-xl lg:text-2xl xl:text-[2rem]">Technical Support</h5>
+      <p className="raleway-lite text-sm md:text-base lg:text-lg xl:text-[1.5rem]">We are here to help.</p>
+    </div>
+  </span>
+</div>
 
 
     </>

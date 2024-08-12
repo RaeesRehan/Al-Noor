@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
-import { FaHeart, FaEye,} from './imports';
+import { FaHeart, FaEye,} from '../imports';
 
 const Products = () => {
   const [products, setProducts] = useState([]);

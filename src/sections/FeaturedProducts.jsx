@@ -10,7 +10,7 @@ import {
     cart,
     whatsapp,
   
-  } from './imports'
+  } from '../imports'
 
 export default function FeaturedProducts() {
     return ( 

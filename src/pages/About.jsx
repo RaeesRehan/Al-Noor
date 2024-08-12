@@ -1,5 +1,5 @@
 import React from 'react'
-import {fan, factory, focus, listIcon} from './imports'
+import {fan, factory, focus, listIcon} from '../imports'
 
 
 function About() {

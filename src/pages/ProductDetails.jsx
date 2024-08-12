@@ -28,7 +28,7 @@ const ProductDetails = () => {
     };
 
     fetchProduct();
-  }, [i]);
+  }, [id]);
 
   if (loading) return <p className="mt-20 flex justify-center"> <div className="loader"></div> </p>;
   if (error) return <p className="mt-20 flex justify-center">Error: {error}</p>;

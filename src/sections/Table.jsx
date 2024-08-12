@@ -20,8 +20,8 @@ import TableAccordion from './TableAccordion.jsx';
 
 
   return (
-    <div className="overflow-scroll">
-    <TableContainer  className='table-container overflow-scroll md:bg-[#f7a400]' >
+    <div className="">
+    <TableContainer  className='table-container md:bg-[#f7a400]' >
     <h2 class="archive text-center text-[#d52720] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-10 sm:mt-12 md:mt-14">
   TECHNICAL DATA <br /> & SPECIFICATIONS
 </h2>
