@@ -21,7 +21,7 @@ import logo from '../images/logo.png';
 const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
-  { label: 'Categories', path: '/categories' },
+  // { label: 'Categories', path: '/categories' },
   { label: 'Products', path: '/products' },
 ];
 
