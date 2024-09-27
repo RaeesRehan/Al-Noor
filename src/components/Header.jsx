@@ -83,7 +83,7 @@ export default function Header() {
             {navItems.map((item) => (
               <Button
                 key={item.label}
-                sx={{ color: '#f7a400', fontWeight:'bold'}}
+                sx={{ color: '#fff', fontWeight:'bold'}}
                 component={NavLink}
                 to={item.path}
                 className={({ isActive }) => (isActive ? 'active ' : '')}
