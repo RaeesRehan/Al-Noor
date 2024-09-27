@@ -8,8 +8,8 @@ import img4 from './images/blue.png'
 import img5 from './images/dark blue.png'
 import img6 from './images/yellow.png'
 import img7 from './images/product.png'
-import img8 from './images/product2.png'
-import img9 from './images/product3.png'
+import img8 from './images/product2.jpg'
+import img9 from './images/product3.webp'
 import fan from './images/fan.png'
 import factory from './images/factory.webp'
 import focus from './images/focus.jpg'
@@ -61,8 +61,8 @@ export { default as img4 } from './images/blue.png';
 export { default as img5 } from './images/dark blue.png';
 export { default as img6 } from './images/yellow.png';
 export { default as img7 } from './images/product.png';
-export { default as img8 } from './images/product2.png';
-export { default as img9 } from './images/product3.png';
+export { default as img8 } from './images/product2.jpg';
+export { default as img9 } from './images/product3.webp';
 export { default as cart } from './images/cart.png';
 export { default as heart } from './images/h.png';
 export { default as whatsapp } from './images/w.png';

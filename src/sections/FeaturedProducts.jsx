@@ -3,9 +3,9 @@ import {
     Splide,
     SplideSlide,
     BasicTable,
-    img9,
     img7,
     img8,
+    img9,
     heart,
     cart,
     whatsapp,
@@ -41,7 +41,7 @@ export default function FeaturedProducts() {
       >
     
         <SplideSlide>
-        <img src={img9} className="aspect-square mx-auto" alt="" srcset="" />
+        <img src={img9} className="aspect-square h-[80%] mx-auto" alt="" srcset="" />
         <span className="border-y-red-600 border-y-2  w-3/4 mx-auto flex justify-around">
                <img src={cart} alt="" />
                <img src={heart} alt="" />
@@ -49,7 +49,7 @@ export default function FeaturedProducts() {
         </span>
         </SplideSlide>
         <SplideSlide>
-        <img src={img7}  className="aspect-square mx-auto" alt="" srcset="" />
+        <img src={img7}  className="aspect-square mx-auto  h-[80%]" alt="" srcset="" />
         <span className="border-y-red-600 border-y-2 w-3/4 mx-auto flex justify-around">
                <img src={cart} alt="" />
                <img src={heart} alt="" />
@@ -57,7 +57,7 @@ export default function FeaturedProducts() {
         </span>
         </SplideSlide>
         <SplideSlide>
-        <img src={img8}  className="aspect-square mx-auto" alt="" srcset="" />
+        <img src={img8}  className="aspect-square mx-auto h-[80%]" alt="" srcset="" />
         <span className="border-y-red-600 border-y-2  w-3/4 mx-auto flex justify-around">
                <img src={cart} alt="" />
                <img src={heart} alt="" />

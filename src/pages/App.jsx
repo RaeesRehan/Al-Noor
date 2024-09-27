@@ -24,7 +24,7 @@ function App() {
         type: 'loop',
         perMove: 1,
         autoplay: true,
-        interval: 3000,
+        interval: 5000,
         pauseOnHover: false,
         gap: '1rem',
       }} 
