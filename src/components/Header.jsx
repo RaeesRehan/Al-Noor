@@ -21,7 +21,6 @@ import logo from '../images/logo.png';
 const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
-  // { label: 'Categories', path: '/categories' },
   { label: 'Products', path: '/products' },
 ];
 
@@ -56,7 +55,7 @@ export default function Header() {
   return (
     <Box sx={{ display: 'flex', flexGrow: 1, overflowY: 'auto' }}>
       <CssBaseline />
-      <AppBar component="nav"  position="relative" sx={{ backgroundColor: 'rgba(255, 255, 255, 0.5)', backdropFilter: 'blur(4px)', }}>
+      <AppBar component="nav"  position="fixed" sx={{ backgroundColor: 'rgba(255, 255, 255, 0.5)', backdropFilter: 'blur(4px)', }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -84,7 +83,7 @@ export default function Header() {
             {navItems.map((item) => (
               <Button
                 key={item.label}
-                sx={{ color: '#f7a400',}}
+                sx={{ color: '#f7a400', fontWeight:'bold'}}
                 component={NavLink}
                 to={item.path}
                 className={({ isActive }) => (isActive ? 'active ' : '')}
